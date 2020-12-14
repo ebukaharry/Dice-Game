@@ -36,14 +36,9 @@ newGame();
         else{
             // Next Plaayer turn
             nextPlayerTurn();
-            
-            
-            // dieDOM.style.display = 'block';
-            // die2DOM.style.display = 'block';
         }
      }
      diceRollAudio();
-
  });
 
  //The Hold Feature
