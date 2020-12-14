@@ -28,7 +28,7 @@ newGame();
         }
 
         // if rolled number was not a 1, then update roundScore
-        else if(die !== 1 && die2 !== 1){
+        else if((die !== 1 && die2 !== 1) || (die === 1 && die2 !== 1) || (die !== 1 && die2 === 1)){
             // Add score
             roundScore += die + die2;
             document.querySelector('#current--' + activePlayer).textContent = roundScore;
@@ -37,9 +37,9 @@ newGame();
             // Next Plaayer turn
             nextPlayerTurn();
             
-            //hide dice when player rolls a 1
-            dieDOM.style.display = 'block';
-            die2DOM.style.display = 'block';
+            
+            // dieDOM.style.display = 'block';
+            // die2DOM.style.display = 'block';
         }
      }
      diceRollAudio();
