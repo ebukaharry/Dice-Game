@@ -38,8 +38,8 @@ newGame();
             nextPlayerTurn();
             
             //hide dice when player rolls a 1
-            /* dieDOM.style.display = 'none';
-            die2DOM.style.display = 'none'; */
+            dieDOM.style.display = 'block';
+            die2DOM.style.display = 'block';
         }
      }
      diceRollAudio();
